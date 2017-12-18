@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chart_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/month_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:gravity="center"
+        android:paddingBottom="@dimen/smallText"
+        android:paddingTop="@dimen/smallText"
+        android:text="2016/04"
+        android:textSize="@dimen/month_size" />
+
+    <tcai.wlu.ca.billscanner.view.PanelDonutChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/month_text"/>
+
+    <tcai.wlu.ca.billscanner.view.MyScrollView
+        android:id="@+id/scrollView"
+        android:background="@color/white"
+        android:layout_below="@id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </tcai.wlu.ca.billscanner.view.MyScrollView>
+</RelativeLayout>

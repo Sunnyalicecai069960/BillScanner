@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/smallText"
+    android:paddingBottom="@dimen/smallText">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_marginLeft="@dimen/largeText"
+            android:layout_marginRight="@dimen/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true" />
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/texts"
+            android:layout_alignBaseline="@id/image"
+            android:layout_toRightOf="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/smallText"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold"
+                android:textColor="@color/less_black"
+                android:paddingLeft="@dimen/smallText" />
+
+            <TextView
+                android:id="@+id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smallText"
+                android:paddingLeft="@dimen/smallText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/record_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/smallText"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middleText"
+            android:layout_alignBaseline="@id/image" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5pt"
+        android:layout_marginLeft="@dimen/smallText"
+        android:layout_marginRight="@dimen/smallText"
+        android:background="@color/half_black" />
+</LinearLayout>

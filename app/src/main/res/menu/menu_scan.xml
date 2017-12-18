@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tcai.wlu.ca.billscanner.activity.ScanActivity">
+    <item
+        android:id="@+id/discount"
+        android:orderInCategory="1"
+        android:title="@string/discount"/>
+    <item
+        android:id="@+id/tax"
+        android:orderInCategory="2"
+        android:title="@string/tax"/>
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Scan"
+        app:titleTextColor="@color/white"
+        toolbar:navigationIcon="@drawable/back">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"/>
+
+    <tcai.wlu.ca.billscanner.userDefinedStyle.MonIndicator
+        android:id="@+id/monIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:circleRadius="20dp"
+        app:cycle="1500"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startScan"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:background="@color/background"
+        android:textSize="18dp"
+        android:text="@string/start"/>
+
+</LinearLayout>

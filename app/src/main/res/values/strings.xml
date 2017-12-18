@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BillScanner</string>
+    <string name="detail">Detail</string>
+    <string name="back">Back</string>
+    <string name="edit">Edit</string>
+    <string name="item">Item</string>
+    <string name="type">Type</string>
+    <string name="price">Price(CAD)</string>
+    <string name="tax">Tax(%)</string>
+    <string name="discount">Discount(%)</string>
+    <string name="totalPrice">TotalPrice</string>
+    <string name="time">Time</string>
+    <string name="money">Money</string>
+    <string name="start">Start!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="report">report</string>
+    <string name="subscription_key">e1f27ba015c14c47b08638bd14dc3981</string>
+
+</resources>

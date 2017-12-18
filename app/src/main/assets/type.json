@@ -1,0 +1,41 @@
+[
+  {
+    "code": "0",
+    "type": "total"
+  },
+  {
+    "code": "1",
+    "type": "food",
+    "color": "#FF0000"
+  },
+  {
+    "code": "2",
+    "type": "transportation",
+    "color": "#00BFFF"
+  },
+  {
+    "code": "3",
+    "type": "hospital",
+    "color": "#00EE00"
+  },
+  {
+    "code": "4",
+    "type": "clothing",
+    "color": "#FFFF00"
+  },
+  {
+    "code": "5",
+    "type": "entertainment",
+    "color": "#FF00FF"
+  },
+  {
+    "code": "6",
+    "type": "daily issue",
+    "color": "#FFC125"
+  },
+  {
+    "code": "7",
+    "type": "others",
+    "color": "#D1D1D1"
+  }
+]

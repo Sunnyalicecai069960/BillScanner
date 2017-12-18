@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="tcai.wlu.ca.billscanner.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"
+                android:fitsSystemWindows="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/money"
+                    android:onClick="onClick"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:id="@+id/month"
+                    android:text="Feb"/>
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/record_list" />
+
+    <tcai.wlu.ca.billscanner.userDefinedStyle.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_gravity="end|bottom"
+        android:gravity="end|bottom"
+        fab:fab_colorNormal="@color/transparent"
+        >
+        <tcai.wlu.ca.billscanner.userDefinedStyle.FloatingActionButton
+            android:id="@+id/add"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="Action A"
+            android:src="@drawable/add"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <tcai.wlu.ca.billscanner.userDefinedStyle.FloatingActionButton
+            android:id="@+id/album"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            android:src="@drawable/album"
+            android:gravity="center"
+            fab:fab_title="Action with a very long name that won\'t fit on the screen"
+            fab:fab_colorPressed="@color/white_pressed"
+            />
+        <tcai.wlu.ca.billscanner.userDefinedStyle.FloatingActionButton
+            android:id="@+id/camera"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            android:src="@drawable/camera"
+            fab:fab_title="Action with a very long name that won\'t fit on the screen"
+            fab:fab_colorPressed="@color/white_pressed"
+            />
+
+    </tcai.wlu.ca.billscanner.userDefinedStyle.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>
